@@ -1,0 +1,127 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0
+}
+
+.App{
+	text-align: center;
+}
+
+a:hover, a:active, a:visited, a:link
+{
+	text-decoration: none;
+	color:white;
+}
+
+.header{
+	display: flex;
+	justify-content: space-around;
+	background: #004d99;
+	color: white;
+}
+
+.footer{
+	display: flex;
+	justify-content: space-around;
+	background: #004d99;
+	color: white;
+}
+
+.footer a:visited
+{
+	text-decoration: none;
+	color:white;
+}
+
+.footer a:link
+{
+	text-decoration: none;
+	color:white;
+}
+
+.footer a:hover { 
+	text-decoration: underline; 
+}
+
+.footer a:active { 
+	text-decoration: underline; 
+}
+
+.thumbs-wrapper{
+	display: none;
+}
+
+.generalInformation{
+	text-align: left;	
+}
+
+.latestNews{
+	text-align: left;	
+}
+
+.imageNews{
+	display: flex;
+	justify-content: space-around;
+}
+
+.imageNews img{
+	width: 270px;
+}
+
+hr {
+	border: 1px solid #0a2be7;
+	border-radius: 5px;
+}
+
+.homeCards{
+	padding: 20px;
+}
+
+.videos{
+	margin: 30px; 
+}
+
+.appointmentForm{
+	background: #e6e6e6;
+}
+
+.statisticsForm{
+	background: #e6e6e6;
+}
+
+/* Αυτό είναι Media Query στο οποίο μπορούμε να τροποποιήσουμε διάφορα classes μόνο για οθόνες έως 768px */
+
+@media only screen and (max-width:768px){
+	.header{
+		flex-direction: column;
+		height: 250px;
+	}
+
+	.homeCards{
+		padding: 0px;
+		flex-direction: column;
+	}
+
+	.videos{
+		margin: 0px;
+		padding: 0px;
+		/* vw σημαίνει ότι καταλαμβάνει όλο το πλάτος της οθόνης. Το αντίστοιχο για το ύψος είναι το vh */
+		width: 100vw; 
+	}
+
+	.footer{
+		flex-direction: column;
+		height: 270px;
+	}
+
+	.imageNews{
+		flex-direction: column;
+	}
+
+	.imageNews img{
+		width: 90%;
+	}
+}
